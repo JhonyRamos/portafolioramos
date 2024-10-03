@@ -6,16 +6,14 @@ Este repositorio contiene proyecto web realizados en el ámbito de desarrollo we
 
 1. **webportafolio**
    - Descripción: Un proyecto de portafolio.
-   - Tecnologías: HTML, CSS, JavaScript.
+   - Tecnologías: HTML, CSS, JavaScript.EmailJS API.
    - Características: Muestra trabajos y habilidades en una página de portafolio personal.
 
 ## Instrucciones de Instalación
 
 Para instalar y ejecutar el proyecto webportafolio:
 
-1. Clonar el repositorio.
-2. Navegar a la carpeta `webportafoliophp`.
-3. Ejecutar el proyecto en un servidor local como XAMPP o WAMP.
+1.  Incluye un formulario de contacto que utiliza la API de **EmailJS** para enviar correos electrónicos sin necesidad de un backend.
 
 ## Contacto
 
