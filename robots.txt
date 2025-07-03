@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jhonyramos.github.io/portafolioramos/sitemap.xml
