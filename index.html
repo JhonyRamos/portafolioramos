@@ -1,336 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Jhony Ramos">
-    <meta name="description" content="Portafolio profesional de Jhony Ramos, ingeniero en sistemas con experiencia en inteligencia artificial, desarrollo móvil y web, bases de datos y soluciones empresariales.">
 
+<head>
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Jhony Ramos" />
+  <meta name="description"
+    content="Portafolio profesional de Jhony Ramos, ingeniero en sistemas con experiencia en inteligencia artificial, desarrollo móvil y web, bases de datos y soluciones empresariales." />
 
-    <meta charset="UTF-8" />
-    <title>Portafolio de Jhony Ramos | Ingeniero en Sistemas con Enfoque en IA y Desarrollo Full Stack</title>
-    <!-- <link rel="stylesheet" href="css/reset.css">-->
-    <link rel="stylesheet" href="CSS\normalize.css" />
-    <!-- Vincula el archivo CSS -->
-    <link rel="stylesheet" href="CSS\ESTILOS.CSS" />
-    <!-- Incluye el archivo CSS de IcoFont-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      integrity="sha512-..."
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <title>
+    Ingeniero en Sistemas con Enfoque en IA y Desarrollo Full Stack
+  </title>
+  <!-- <link rel="stylesheet" href="css/reset.css">-->
+  <link rel="stylesheet" href="CSS\normalize.css" />
+  <!-- Vincula el archivo CSS -->
+  <link rel="stylesheet" href="CSS\ESTILOS.CSS" />
+  <!-- Incluye el archivo CSS de IcoFont-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Incluye EmailJS desde un CDN e inicializa con la clave para enviar emails -->
+  <!-- 2. Biblioteca de EmailJS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-    <!-- Incluye EmailJS desde un CDN e inicializa con la clave para enviar emails -->
-    <!-- 2. Biblioteca de EmailJS -->
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init({
-          publicKey: "PA5_F3FBcAPMbEVAE",
-        });
-      })();
-    </script>
-  </head>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "PA5_F3FBcAPMbEVAE",
+      });
+    })();
+  </script>
+</head>
 
-  <body>
-    <!-- Esta es la seccion del header-->
-    <header class="header">
-      <div class="header-wrapper">
-        <div class="header-logo">
-          <img src="IMG/logo.png" alt="logo-portafolio" height="60" />
-        </div>
-        <nav class="header-menu">
-          <ul class="header-menu-wrapper">
-            <li class="header-menu-item">
-              <a href="#aboutme" class="header-menu-link">Sobre mi</a>
-            </li>
-            <li class="header-menu-item">
-              <a href="#skills" class="header-menu-link">Habilidades</a>
-            </li>
-            <li class="header-menu-item">
-              <a href="#works" class="header-menu-link">Portafolio</a>
-            </li>
-            <li class="header-menu-item">
-              <a href="#contact" class="header-menu-link">Contacto</a>
-            </li>
-          </ul>
-        </nav>
+<body>
+  <!-- Esta es la seccion del header-->
+  <header class="header">
+    <div class="header-wrapper">
+      <div class="header-logo">
+        <a class="logo-link" href="#">Desarrollor Full Stack</a>
       </div>
+
+      <nav class="header-menu">
+        <ul class="header-menu-wrapper">
+          <li class="header-menu-item">
+            <a href="#aboutme" class="header-menu-link">Sobre mi</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="#skills" class="header-menu-link">Habilidades</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="portafolio.html" class="header-menu-link">Portafolio</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="#contact" class="header-menu-link">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Esta es la seccion para la portatada El fondo sera agregado en CSS-->
+  <section class="cover">
+    <div class="cover-wrapper">
+      <div class="cover-photo-container">
+        <img src="IMG/mi-foto.webp" alt="Jhony ramos" height="200" class="cover-photo" />
+      </div>
+      <div class="cover-text">
+        <h2 class="cover-title">Jhony Alexi Ramos</h2>
+        <h1 class="cover-sub-title">Ingeniero en sistema</h1>
+      </div>
+    </div>
+  </section>
+
+  <!--Esta es la seccion para la informacion sobre mi-->
+  <section id="aboutme" class="aboutme">
+    <header>
+      <h1 class="title-underline">
+        <span>Sobre Mi</span>
+      </h1>
     </header>
+    <div class="cover-description">
+      <p>
+        Soy Ingeniero en Sistemas con especialización en Inteligencia Artificial. Desarrollo soluciones basadas en
+        software con un enfoque Full Stack, combinando el desarrollo frontend y backend para crear aplicaciones
+        tecnológicas eficientes, escalables y orientadas a resultados y alineados con las necesidades del negocio..
+      </p>
 
-    <!-- Esta es la seccion para la portatada El fondo sera agregado en CSS-->
-    <section class="cover">
-      <div class="cover-wrapper">
-        <div class="cover-photo-container">
-          <img
-            src="IMG/mi-foto.webp"
-            alt="Jhony ramos"
-            height="200"
-            class="cover-photo" />
+
+
+      <div class="text-center">
+        <a href="mailto:alexiirdev@gmail.com" class="btn-blue">Contactame</a>
+      </div>
+    </div>
+  </section>
+
+  <!--Esta es la seccion de Habilidades-->
+  <section id="skills" class="skills">
+    <header>
+      <h1 class="title-underline">
+        <span>Habilidades</span>
+      </h1>
+    </header>
+    <div class="carousel">
+      <div class="card box__1">
+        <span class="highlight-white">Systems Engineer</span>
+        <span class="highlight-color">Especialista en Inteligencia Artificial</span>
+
+        <span class="highlight-">Software Development</span>
+      </div>
+
+      <div class="card box__2">
+        <span class="highlight-white">Desarrollo Móvil</span>
+        <ul>
+          <li><span class="highlight-color">Android</span></li>
+          <li><span class="highlight-color">Java</span></li>
+          <li><span class="highlight-color">Kotlin</span></li>
+          <li><span class="highlight-color">Flutter</span></li>
+          <li><span class="highlight-color">iOS</span></li>
+          <li><span class="highlight-color">Swift </span></li>
+        </ul>
+      </div>
+      <div class="card box__3">
+        <span class="highlight-white">Desarrollo Web y Backend</span>
+
+        <ul>
+          <li><span class="highlight-color">html</span></li>
+          <li><span class="highlight-color">css</span></li>
+          <li><span class="highlight-color">JavaScript</span></li>
+          <li><span class="highlight-color">PHP</span></li>
+          <li><span class="highlight-color">C#</span></li>
+          <li><span class="highlight-color">ASP.NET MVC</span></li>
+        </ul>
+      </div>
+      <div class="card box__4">
+        <span class="highlight-white">Bases de Datos</span>
+        <ul>
+          <li><span class="highlight-color">Oracle 11g</span></li>
+          <li><span class="highlight-color">Oracle 12c</span></li>
+          <li><span class="highlight-color">Oracle 19c</span></li>
+          <li><span class="highlight-color">SQL Server</span></li>
+          <li><span class="highlight-color">MySQL</span></li>
+          <li><span class="highlight-color">MongoDB</span></li>
+        </ul>
+      </div>
+      <div class="card box__5">
+        <span class="highlight-white">Middleware y Herramientas Empresariales</span>
+        <ul>
+          <li>
+            <span class="highlight-color">Oracle Fusion Middleware</span>
+          </li>
+          <li><span class="highlight-color">WebLogic</span></li>
+          <li><span class="highlight-color">Forms & Reports</span></li>
+          <li><span class="highlight-color">Oracle APEX</span></li>
+        </ul>
+      </div>
+
+      <div class="card box__6">
+        <span class="highlight-white">Inteligencia Artificial</span>
+        <ul>
+          <li><span class="highlight-color">Machine Learning</span></li>
+          <li><span class="highlight-color">Deep Learning</span></li>
+          <li><span class="highlight-color">Redes Neuronales</span></li>
+          <li><span class="highlight-color">Modelos NLP</span></li>
+          <li><span class="highlight-color">Computer Vision</span></li>
+          <li><span class="highlight-color">Python + TensorFlow / PyTorch</span></li>
+        </ul>
+      </div>
+  </section>
+
+  <!-- Esta es la sección de contacto -->
+  <section id="contact" class="contact">
+    <header>
+      <h1 class="title-underline">
+        <span>Contáctame</span>
+      </h1>
+    </header>
+    <form id="contact-form" class="contact-form">
+      <div class="contact-row">
+        <div class="contact-column left">
+          <div class="field">
+            <label for="from_name">Correo</label>
+            <input type="text" name="from_name" id="from_name" class="contac-input-text" required />
+          </div>
         </div>
-        <div class="cover-text">
-          <h2 class="cover-title">Jhony Alexi Ramos</h2>
-          <h1 class="cover-sub-title">Ingeniero en sistema</h1>
+        <div class="contact-column right">
+          <div class="field">
+            <label for="to_name">Nombre</label>
+            <input type="text" name="to_name" id="to_name" class="contac-input-text" required />
+          </div>
         </div>
       </div>
-    </section>
-
-    <!--Esta es la seccion para la informacion sobre mi-->
-    <section id="aboutme" class="aboutme">
-      <header>
-        <h1 class="title-underline">
-          <span>Sobre Mi</span>
-        </h1>
-      </header>
-      <div class="cover-description">
-        <p>
-          Hola Soy Jhony Ramos, Ingeniero en Sistemas con más de 3 años de
-          experiencia en el desarrollo de software y gestión de bases de datos.
-          Mi pasión por la tecnología me ha llevado a explorar una amplia gama
-          de herramientas y tecnologías, permitiéndome ofrecer soluciones
-          innovadoras y eficientes.
-        </p>
-
-        <p>
-          Recientemente, me he enfocado en proyectos relacionados con Oracle. He
-          trabajado en la instalación y configuración de Oracle Database
-          11g,12c,19c, Oracle apex y Oracle Fusion Middleware Infrastructure.
-          También he implementado WebLogic Server y Oracle Forms and Reports.
-        </p>
-
-        <p>
-          Mi experiencia y mi trayectoria profesional se ha centrado en el
-          desarrollo de aplicaciones móviles y web, donde he utilizado una
-          variedad de tecnologías para crear soluciones efectivas y atractivas.
-        </p>
-
-        <div class="text-center">
-          <a href="mailto:alexiirdev@gmail.com" class="btn-blue">Contactame</a>
+      <div class="contact-row">
+        <div class="contact-column --width100">
+          <div class="field">
+            <label for="message">Mensaje</label>
+            <textarea name="message" id="message" rows="10" required></textarea>
+          </div>
         </div>
       </div>
-    </section>
-
-    <!--Esta es la seccion de Habilidades-->
-    <section id="skills" class="skills">
-      <header>
-        <h1 class="title-underline">
-          <span>Habilidades</span>
-        </h1>
-      </header>
-      <div class="carousel">
-        <div class="card box__1">
-          <span class="highlight-white">Systems Engineer</span>
-          <br />
-          <span class="highlight-color">Software Development</span>
-        </div>
-        <div class="card box__2">
-          <span class="highlight-white">Desarrollo Móvil</span>
-          <ul>
-            <li><span class="highlight-color">Android</span></li>
-            <li><span class="highlight-color">Java</span></li>
-            <li><span class="highlight-color">Kotlin</span></li>
-            <li><span class="highlight-color">Flutter</span></li>
-            <li><span class="highlight-color">iOS</span></li>
-            <li><span class="highlight-color">Swift </span></li>
-          </ul>
-        </div>
-        <div class="card box__3">
-          <span class="highlight-white">Desarrollo Web y Backend</span>
-
-          <ul>
-            <li><span class="highlight-color">html</span></li>
-            <li><span class="highlight-color">css</span></li>
-            <li><span class="highlight-color">JavaScript</span></li>
-            <li><span class="highlight-color">PHP</span></li>
-            <li><span class="highlight-color">C#</span></li>
-            <li><span class="highlight-color">ASP.NET MVC</span></li>
-          </ul>
-        </div>
-        <div class="card box__4">
-          <span class="highlight-white">Bases de Datos</span>
-          <ul>
-            <li><span class="highlight-color">Oracle 11g</span></li>
-            <li><span class="highlight-color">Oracle 12c</span></li>
-            <li><span class="highlight-color">Oracle 19c</span></li>
-            <li><span class="highlight-color">SQL Server</span></li>
-            <li><span class="highlight-color">MySQL</span></li>
-            <li><span class="highlight-color">MongoDB</span></li>
-          </ul>
-        </div>
-        <div class="card box__5">
-          <span class="highlight-white"
-            >Middleware y Herramientas Empresariales</span
-          >
-          <ul>
-            <li>
-              <span class="highlight-color">Oracle Fusion Middleware</span>
-            </li>
-            <li><span class="highlight-color">WebLogic</span></li>
-            <li><span class="highlight-color">Forms & Reports</span></li>
-            <li><span class="highlight-color">Oracle APEX</span></li>
-          </ul>
-        </div>
+      <div class="text-center">
+        <input type="submit" id="button" class="btn-blue" value="Enviar" />
       </div>
-    </section>
+    </form>
+  </section>
 
-    <!-- esta es la seccion para mis trabajos realizados -->
-    <section id="works" class="works">
-      <header>
-        <h1 class="title-underline">
-          <span>Portafolio</span>
-        </h1>
-      </header>
-      <div class="works-wrapper">
-        <article class="works-item">
-          <div class="works-item-img-container">
-            <img
-              src="IMG/work01.webp"
-              alt="Aplicación móvil desarrollada. Incluye pantallas de inicio, navegación y funcionalidades clave"
-              class="works-item-img" />
-          </div>
-          <div class="works-item-description">
-            <header>
-              <h2 class="work-item-title">Desarrollo Móvil</h2>
-            </header>
-            <p class="work-item-client">
-              Para
-              <a href="https://www.google.com" target="_blank"
-                >Nuestro Cliente</a
-              >
-            </p>
-            <div class="text-center">
-              <a
-                href="https://drive.google.com/file/d/1rYA8WhOo9JTwQSnTqoufR5-crFvUd65L/view?usp=drive_link"
-                class="btn-blue"
-                target="_blank"
-                >Visitar web</a
-              >
-            </div>
-          </div>
-        </article>
-        <article class="works-item">
-          <div class="works-item-img-container">
-            <img
-              src="IMG/work02.webp"
-              alt="Desarrollo de página web para empresa o emprendendores. Sistema de backend para gestión de usuarios y datos. Incluye arquitectura del servidor y base de datos."
-              class="works-item-img" />
-          </div>
-          <div class="works-item-description">
-            <header>
-              <h2 class="work-item-title">Desarrollo web y Backend</h2>
-            </header>
-            <p class="work-item-client">
-              Para
-              <a href="https://www.google.com" target="_blank"
-                >Nuestro Cliente</a
-              >
-            </p>
-            <div class="text-center">
-              <a href="https://www.google.com" class="btn-blue" target="_blank"
-                >Visitar web</a
-              >
-            </div>
-          </div>
-        </article>
-        <article class="works-item">
-          <div class="works-item-img-container">
-            <img
-              src="IMG/work03.webp"
-              alt="Solución de base de datos para una empresa. Muestra el diseño y la estructura de las tablas y relaciones."
-              class="works-item-img" />
-          </div>
-          <div class="works-item-description">
-            <header>
-              <h2 class="work-item-title">Desarrollo Bases de Datos</h2>
-            </header>
-            <p class="work-item-client">
-              Para
-              <a href="https://www.google.com" target="_blank"
-                >Nuestro Cliente</a
-              >
-            </p>
-            <div class="text-center">
-              <a href="https://www.google.com" class="btn-blue" target="_blank"
-                >Visitar web</a
-              >
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
+  <!-- 1. script personalizado -->
+  <script src="JS/script.js" defer></script>
+  <!-- Vincula el archivo script.js -->
 
-    <!-- Esta es la sección de contacto -->
-    <section id="contact" class="contact">
-      <header>
-        <h1 class="title-underline">
-          <span>Contáctame</span>
-        </h1>
-      </header>
-      <form id="contact-form" class="contact-form">
-        <div class="contact-row">
-          <div class="contact-column left">
-            <div class="field">
-              <label for="from_name">Correo</label>
-              <input
-                type="text"
-                name="from_name"
-                id="from_name"
-                class="contac-input-text"
-                required />
-            </div>
-          </div>
-          <div class="contact-column right">
-            <div class="field">
-              <label for="to_name">Nombre</label>
-              <input
-                type="text"
-                name="to_name"
-                id="to_name"
-                class="contac-input-text"
-                required />
-            </div>
-          </div>
-        </div>
-        <div class="contact-row">
-          <div class="contact-column --width100">
-            <div class="field">
-              <label for="message">Mensaje</label>
-              <textarea
-                name="message"
-                id="message"
-                rows="10"
-                required></textarea>
-            </div>
-          </div>
-        </div>
-        <div class="text-center">
-          <input type="submit" id="button" class="btn-blue" value="Enviar" />
-        </div>
-      </form>
-    </section>
+  <!--Esta es la seccion del footer-->
+  <footer class="footer">
+    <div class="footer-wrapper">
+      <p class="footer-text">
+        Hecho <span class="icon"><i class="fab fa-linkedin"></i></span> por
+        <a href="https://www.linkedin.com/in/alexiramos-ing/" target="_blank" class="link">@ALEXIRAMOS-ING</a>
+      </p>
+      <p>© 2024 JhonyRamos</p>
+    </div>
+  </footer>
+</body>
 
-    <!-- 1. script personalizado -->
-    <script src="JS/script.js" defer></script>
-    <!-- Vincula el archivo script.js -->
-
-    <!--Esta es la seccion del footer-->
-    <footer class="footer">
-      <div class="footer-wrapper">
-        <p class="footer-text">
-          Hecho <span class="icon"><i class="fab fa-linkedin"></i></span> por
-          <a
-            href="https://www.linkedin.com/in/alexiramos-ing/"
-            target="_blank"
-            class="link"
-            >@ALEXIRAMOS-ING</a
-          >
-        </p>
-        <p>© 2024 JhonyRamos</p>
-      </div>
-    </footer>
-  </body>
 </html>
