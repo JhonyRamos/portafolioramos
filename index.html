@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta name="robots" content="index, follow" />
@@ -35,16 +35,32 @@
 
 <body>
   <!-- Esta es la seccion del header-->
+  <!-- ========== HEADER ========== -->
   <header class="header">
     <div class="header-wrapper">
-      <div class="header-logo">
-        <a class="logo-link" href="#">Desarrollor Full Stack</a>
-      </div>
-
       <nav class="header-menu">
+
+        <!-- Logo -->
+        <div class="header-logo">
+          <a class="logo-link" href="#">Desarrollardor Full Stack</a>
+        </div>
+
+        <!-- Botón hamburguesa -->
+        <label class="labe_hamburguesa" for="menu_hamburguesa">
+          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="list_icon"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+          </svg>
+        </label>
+
+        <!-- Input para controlar menú -->
+        <input class="menu_hamburguesa" type="checkbox" id="menu_hamburguesa">
+
+        <!-- Menú de navegación -->
         <ul class="header-menu-wrapper">
           <li class="header-menu-item">
-            <a href="#aboutme" class="header-menu-link">Sobre mi</a>
+            <a href="#aboutme" class="header-menu-link">Sobre mí</a>
           </li>
           <li class="header-menu-item">
             <a href="#skills" class="header-menu-link">Habilidades</a>
@@ -56,9 +72,11 @@
             <a href="#contact" class="header-menu-link">Contacto</a>
           </li>
         </ul>
+
       </nav>
     </div>
   </header>
+
 
   <!-- Esta es la seccion para la portatada El fondo sera agregado en CSS-->
   <section class="cover">
