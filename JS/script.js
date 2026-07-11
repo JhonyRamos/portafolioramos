@@ -34,12 +34,11 @@ document
     event.preventDefault();
 
     // Obtener valores de los campos
-    const fromName = document.getElementById("from_name").value.trim(); // Nombre
-    const fromEmail = document.getElementById("from_email").value.trim(); // Correo
-    const toName = document.getElementById("to_name").value.trim();
+    const fromName = document.getElementById("from_name").value.trim();
+    const fromEmail = document.getElementById("from_email").value.trim();
     const message = document.getElementById("message").value.trim();
     // Validación del formulario
-    if (!fromName || !fromEmail || !toName || !message) {
+    if (!fromName || !fromEmail || !message) {
       alert("Por favor, completa todos los campos.");
       return;
     }
@@ -51,15 +50,12 @@ document
     }
 
     // Obtener el valor del campo de nombre
-    const nameInput = document.getElementById("to_name").value;
+    const nameRegex = /^[A-Za-zÀ-ÿ\s]+$/;
 
-    // Validar que el nombre solo contenga letras y espacios
-    const nameRegex = /^[A-Za-zÀ-ÿ\s]+$/; // Expresión regular para letras y espacios
-    if (!nameRegex.test(nameInput)) {
-      alert("El nombre solo debe contener letras y espacios.");
-      return; // Detiene el envío si la validación falla
-    }
-
+if (!nameRegex.test(fromName)) {
+  alert("El nombre solo debe contener letras y espacios.");
+  return;
+}
     btn.value = "Enviando...";
     btn.disabled = true; // Deshabilitar el botón
 
