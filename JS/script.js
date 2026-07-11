@@ -34,17 +34,18 @@ document
     event.preventDefault();
 
     // Obtener valores de los campos
-    const fromName = document.getElementById("from_name").value.trim();
+    const fromName = document.getElementById("from_name").value.trim(); // Nombre
+    const fromEmail = document.getElementById("from_email").value.trim(); // Correo
     const toName = document.getElementById("to_name").value.trim();
     const message = document.getElementById("message").value.trim();
     // Validación del formulario
-    if (!fromName || !toName || !message) {
+    if (!fromName || !fromEmail || !toName || !message) {
       alert("Por favor, completa todos los campos.");
       return;
     }
     // Validar el formato del correo electrónico
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Expresión regular para el correo
-    if (!emailPattern.test(fromName)) {
+    if (!emailPattern.test(fromEmail)) {
       alert("Por favor, ingresa un correo electrónico válido.");
       return;
     }
